@@ -27,13 +27,51 @@
     <title>IP Address Tracker</title>
   </head>
   <body>
-    IP Address Tracker Search for any IP address or domain IP Address Location
-    Timezone UTC
-    <!-- add offset value dynamically using the API -->
-    ISP
+    <!-- IP entry form area -->
+    <section class="section-ip-entry-form">
+      <h1>IP Address Tracker</h1>
+      <!-- IP input form -->
+      <form class="ip-entry-form" action="#">
+        <div class="error-message-container">
+          <input
+            class="ip-input"
+            type="text"
+            aria-label="Enter any IP address or domain here"
+            placeholder="Search for any IP address or domain"
+          />
+          <button class="btn" type="submit">></button>
+        </div>
+      </form>
+    </section>
 
-    <div id="map"></div>
+    <!-- IP details area -->
+    <section class="ip-details-area">
+      <div class="ip-details-container">
+        <div class="ip-address-container">
+          <div class="ip-address">IP Address</div>
+          <div class="ip-address-details">192.212.174.101</div>
+        </div>
+        <div class="ip-location-container">
+          <div class="ip-location">Location</div>
+          <div class="ip-location-details">Brooklyn, NY 10001</div>
+        </div>
+        <div class="ip-timezone-container">
+          <div class="ip-timezone">Timezone</div>
+          <div class="ip-timezone-details">
+            UTC -05:00<!-- add offset value dynamically using the API -->
+          </div>
+        </div>
+        <div class="ip-isp-container">
+          <div class="ip-isp">ISP</div>
+          <div class="ip-isp-details">SpaceX Starlink</div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Map area -->
+    <section class="map-area"><div id="map"></div></section>
+
+    <!-- Attribution area -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
