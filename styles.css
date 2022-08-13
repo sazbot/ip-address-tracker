@@ -16,6 +16,7 @@ body {
   font-weight: 500;
   color: #2c2c2c;
   text-align: center;
+  height: 100vh;
 }
 
 /* ==================
@@ -30,6 +31,15 @@ h1 {
   color: #ffffff;
 }
 
+.ip-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  padding-left: 24px;
+  opacity: 50%;
+}
+
 /* ==================
 IP entry form area
 ===================== */
@@ -40,12 +50,50 @@ IP entry form area
 }
 
 .ip-entry-form {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+}
+
+.ip-input {
+  height: 58px;
+  width: 269px;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  border-radius: 15px 0 0 15px;
+  border: 0;
+}
+
+.ip-input:focus,
+.ip-input:hover {
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  height: 58px;
+  width: 58px;
+  color: white;
+  background-color: black;
+  border-radius: 0 15px 15px 0;
+  border: 0;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #3f3f3f;
+  cursor: pointer;
 }
 
 .ip-details-container {
+  margin: 0 auto;
+  width: 90vw;
   border: 1px solid red;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,8 +101,18 @@ IP entry form area
 }
 
 .ip-detail-container {
-  border: 1px solid blue;
+  padding: 13px 24px;
   text-align: center;
+}
+
+.ip-detail {
+  padding-bottom: 7px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1.4583333730697632px;
+  color: #2c2c2c;
+  opacity: 49.87%;
 }
 
 .attribution {
@@ -66,5 +124,5 @@ IP entry form area
 }
 
 #map {
-  height: 180px;
+  height: 300px;
 }
