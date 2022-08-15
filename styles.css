@@ -16,7 +16,6 @@ body {
   font-weight: 500;
   color: #2c2c2c;
   text-align: center;
-  height: 100vh;
 }
 
 /* ==================
@@ -45,8 +44,9 @@ IP entry form area
 ===================== */
 
 .section-ip-entry-form {
-  padding: 26px;
+  padding: 26px 25px 90px 25px;
   background-image: url(images/pattern-bg.png);
+  z-index: 1;
 }
 
 .ip-entry-form {
@@ -88,9 +88,12 @@ IP entry form area
 }
 
 .ip-details-container {
-  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: 23%;
+  right: 5%;
+  left: 5%;
   width: 90vw;
-  border: 1px solid red;
   background: #ffffff;
   box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
   border-radius: 15px;
@@ -125,4 +128,5 @@ IP entry form area
 
 #map {
   height: 300px;
+  z-index: 1;
 }
